@@ -224,7 +224,7 @@ public class FsClockView extends FrameLayout {
         }
 
         if(mShowDigital) {
-            final SimpleDateFormat sdfTime = new SimpleDateFormat(mFormat24hrs ? "HH:mm" : "h:mm");
+            final SimpleDateFormat sdfTime = new SimpleDateFormat(mFormat12hrs ? "HH:mm" : "h:mm");
             final SimpleDateFormat sdfSeconds = new SimpleDateFormat("ss");
             mDigitalClock.setText(sdfTime.format(cal.getTime()), sdfSeconds.format(cal.getTime()));
         }
